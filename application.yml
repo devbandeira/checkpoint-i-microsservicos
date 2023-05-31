@@ -1,0 +1,23 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+#   Consigo mostrar os detalhes da saúde da aplicação
+#  endpoint:
+#    health:
+#      show-details: always
+info:
+  author: Alexander B.
+  mail: dev.bandeira@outlook.com
+  cel: 00 00000000
+server:
+  port: ${PORT:9999}
+message: Mensagem generica
